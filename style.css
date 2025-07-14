@@ -9,16 +9,8 @@ body {
     position: relative;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><defs><style type="text/css">@font-face{font-family:FontAwesome;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-solid-900.woff2) format("woff2");}</style></defs><text x="20" y="40" font-family="FontAwesome" font-size="30" fill="rgba(0,0,0,0.05)">%26%23xf0a2;</text><text x="120" y="150" font-family="FontAwesome" font-size="30" fill="rgba(0,0,0,0.05)">%26%23xf1e0;</text><text x="50" y="100" font-family="FontAwesome" font-size="30" fill="rgba(0,0,0,0.05)">%26%23xf080;</text></svg>');
-    opacity: 0.3;
-    z-index: -1;
+body {
+    background: #f4f4f4 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="10" y="30" font-family="FontAwesome" font-size="20" fill="rgba(0,0,0,0.05)">%26%23xf0a2;</text><text x="70" y="80" font-family="FontAwesome" font-size="20" fill="rgba(0,0,0,0.05)">%26%23xf1e0;</text></svg>');
 }
 
 .container {
@@ -117,10 +109,11 @@ section h2 {
 }
 
 .company-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .job h3 {
