@@ -168,6 +168,8 @@ section h2 {
 .skill-item span {
     font-weight: bold;
     font-size: 0.9rem;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 /* Certifications Section */
@@ -320,6 +322,10 @@ section.visible {
 
 /* Responsive Design */
 @media(max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .container {
         width: 90%;
     }
