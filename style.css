@@ -1,0 +1,199 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #0779e4;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#contact a {
+    color: #0779e4;
+    text-decoration: none;
+}
+
+/* Profile Section */
+#profile p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.job {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.job h3 {
+    margin-bottom: 0.2rem;
+}
+
+.job p {
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul li {
+    display: inline-block;
+    background: #0779e4;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Certifications Section */
+#certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#certifications ul li {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0779e4;
+}
+
+/* Projects Section */
+.project {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Hobbies Section */
+#hobbies ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#hobbies ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Languages Section */
+#languages ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#languages ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Animations */
+section {
+    transition: transform 1s, opacity 1s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+section.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #contact ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #skills ul li {
+        display: block;
+    }
+}
